@@ -113,7 +113,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: obj1
+      data: obj2
     }
     this.handleChange = this.handleChange.bind(this);
     this.createCapitalizedAndSpacedLabel = this.createCapitalizedAndSpacedLabel.bind(this);
@@ -159,6 +159,7 @@ class App extends Component {
     return (
       <div className='light-grey-bg pad-5'>
         <form>
+          <div className='column grey-bg'>
           {keys.map((key, i) => 
             typeof data[key] === 'string' ?
             <DataInput
@@ -174,6 +175,7 @@ class App extends Component {
               topTitle={key}
               handleChange={this.handleChange}/>
             )}
+          </div>
         </form>
       </div>
     );
