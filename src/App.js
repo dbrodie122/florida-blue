@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import './App.css';
 import { DataInput } from './components/DataInput';
 import { FormSection } from './components/FormSection';
 
