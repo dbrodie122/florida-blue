@@ -15,6 +15,8 @@ export class DataInput extends React.Component {
       this.textInput.focus();
     }
   }
+
+
   handleUpdate(e){
     let topTitle = this.props.topTitle;
     let index = this.props.index;
@@ -37,10 +39,7 @@ export class DataInput extends React.Component {
 
   render(){
     const capitalizedLabel = this.props.capitalize(this.props.label)
-    // let inputType;
-    // if (this.props.label === 'birthDate') {
-    //   inputType = 'date'
-    // }
+
     return this.state.focused ? (
       <label className='column blue-text margin-1' onBlur={this.handleFocus}>
         {capitalizedLabel}

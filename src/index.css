@@ -8,6 +8,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .grey-bg {
   background: #F2F3F4;
   margin: 5% 10%;
@@ -20,9 +27,16 @@ body {
 .blue-text {
   color: #43AFE5;
 }
+
+.default-text {
+  color: initial;
+  font-size: 11px;
+}
+
 .margin-1 {
   margin: 1%;
 }
+
 .pad-5 {
   padding: 5%;
 }

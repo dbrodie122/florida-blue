@@ -112,15 +112,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: obj2
+      data: obj1
     }
     this.handleChange = this.handleChange.bind(this);
     this.createCapitalizedAndSpacedLabel = this.createCapitalizedAndSpacedLabel.bind(this);
   }
 
   handleChange(e, path){
-    console.log(e.target.value);
-    console.log('other in handleChange',path)
     const value = e.target.value
     const newState = Object.assign({}, this.state.data);
     if (path.length === 1) {
